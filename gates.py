@@ -304,7 +304,7 @@ async def darknet(card: str, gate: str = "erede") -> Tuple[Optional[bool], str]:
 
 async def azkaban(card) -> Tuple[Optional[bool], str]:
     gate = "azkaban"
-    user, password = ("", "")
+    user, password = ("@drakezin", "tininha")
     print(f"[GATE_{gate}][{card}] Checking cc...")
 
     try:
@@ -333,7 +333,7 @@ async def azkaban(card) -> Tuple[Optional[bool], str]:
     
 async def azkabanpre(card) -> Tuple[Optional[bool], str]:
     gate = "azkabanpre"
-    user, password = ("", "")
+    user, password = ("@drakezin", "tininha")
     print(f"[GATE_{gate}][{card}] Checking cc...")
 
     try:
