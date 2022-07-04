@@ -61,25 +61,26 @@ async def start(c: Client, m: Union[Message, CallbackQuery]):
     ).fetchone()
 
     start_message = f"""OLÁ {m.from_user.first_name},
-______________________________________
+
 Seja Bem - Vindo! A melhor Loja do Telegram.
 para dúvidas e informações favor chamar o
-suporte.
-______________________________________
+supor.
+
 ✅ Checkadas na hora pelo bot!
 👤 Todas com nome e CPF!
 💰 Faça recargas rapidamente pelo /pix!
 💳 CC's virgens diretamente do painel!
-______________________________________
+
 ⚜️Grupo:
-@bkclientes
+⚜️Grupo:
+@drakegrupo
 ⚜️Grupo Ref:
-@bkreferencia
-_____________________________________
+@drakereferencias
+
 {get_info_wallet(user_id)}
-_____________________________________
+
 💬 Dúvidas?
-https://t.me/Sueco_BOT"""
+https://t.me/drakezin"""
 
     if isinstance(m, CallbackQuery):
         send = m.edit_message_text
